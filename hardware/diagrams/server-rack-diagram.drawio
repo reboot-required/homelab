@@ -1,0 +1,109 @@
+<mxfile host="65bd71144e">
+    <diagram id="OfbA1scU8f39Q8o4j2vM" name="Page-1">
+        <mxGraphModel dx="1229" dy="957" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="  9 HE" style="shape=rectangle;whiteSpace=wrap;align=left;fillColor=#E8E8E8;fontColor=#333333;strokeColor=#A6A6A6;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="120" width="320" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="  8 HE" style="shape=rectangle;whiteSpace=wrap;align=left;fillColor=#E8E8E8;fontColor=#333333;strokeColor=#A6A6A6;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="170" width="320" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="  7 HE" style="shape=rectangle;whiteSpace=wrap;align=left;fillColor=#E8E8E8;fontColor=#333333;strokeColor=#A6A6A6;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="220" width="320" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="  6 HE" style="shape=rectangle;whiteSpace=wrap;align=left;fillColor=#E8E8E8;fontColor=#333333;strokeColor=#A6A6A6;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="270" width="320" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="  4 HE" style="shape=rectangle;whiteSpace=wrap;align=left;fillColor=#E8E8E8;fontColor=#333333;strokeColor=#A6A6A6;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="370" width="320" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="  5 HE" style="shape=rectangle;whiteSpace=wrap;align=left;fillColor=#E8E8E8;fontColor=#333333;strokeColor=#A6A6A6;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="320" width="320" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="  2 HE" style="shape=rectangle;whiteSpace=wrap;align=left;fillColor=#E8E8E8;fontColor=#333333;strokeColor=#A6A6A6;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="470" width="320" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="  3 HE" style="shape=rectangle;whiteSpace=wrap;align=left;fillColor=#E8E8E8;fontColor=#333333;strokeColor=#A6A6A6;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="420" width="320" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="  1 HE" style="shape=rectangle;whiteSpace=wrap;align=left;fillColor=#E8E8E8;fontColor=#333333;strokeColor=#A6A6A6;opacity=40;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="520" width="320" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="RaspPi 3B&lt;br&gt;1GB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="180" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Netgear 8-Port-Switch Managed" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="230" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="N150 opnSense" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="130" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="N150 proxmox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="280" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="RaspPi 5B&lt;br&gt;8GB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="180" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Netgear 8-Port-Switch Managed PoE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="380" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Patch panel 12-Port" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="330" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="K3s Shelf" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="430" width="250" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Cel3867U&lt;br&gt;K3s master01" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="460" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="N150&lt;br&gt;K3s worker01" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="490" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="N150&lt;br&gt;K3s worker02" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="520" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="2TB&lt;br&gt;NAS Drive01" style="rounded=1;whiteSpace=wrap;html=1;rotation=180;direction=south;textDirection=vertical-lr;fillColor=#E5F1FF;strokeColor=#23445d;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="455" width="30" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="2TB&lt;br&gt;NAS Drive02" style="rounded=1;whiteSpace=wrap;html=1;rotation=180;direction=south;textDirection=vertical-lr;fillColor=#E5F1FF;strokeColor=#23445d;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="455" width="30" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Networking" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="410" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="CPUs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="465" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="M4 mini 16GB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="80" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="openWRT ACP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="80" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="&lt;span class=&quot;tag_trans&quot;&gt;Attachments&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;rotation=270;direction=south;textDirection=vertical-lr;fillColor=#E5F1FF;strokeColor=#23445d;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="460" width="40" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="IoT" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="120" width="280" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="ESP8266_0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="150" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="ESP8266_1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="190" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="ESP8266_2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="230" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="ESP8266_3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="150" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="ESP8266_4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="190" width="100" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
