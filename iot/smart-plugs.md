@@ -12,8 +12,8 @@ Two smart plugs are deployed for power monitoring and switching. All follow the 
 
 | Hostname | Location | Function | IP | Protocol |
 |---|---|---|---|---|
-| `took-00.shire` | Server rack | Power monitoring & switching | 10.136.30.20 | MQTT → `weathertop.shire` |
-| `took-01.shire` | Living room | Power monitoring & switching | 10.136.30.21 | MQTT → `weathertop.shire` |
+| `took-00.shire` | Server rack | Power monitoring & switching | 10.136.30.20 | MQTT → `gondolin.shire` |
+| `took-01.shire` | Living room | Power monitoring & switching | 10.136.30.21 | MQTT → `gondolin.shire` |
 
 ---
 

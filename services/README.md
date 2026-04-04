@@ -10,7 +10,7 @@ This category documents all self-hosted services running in the homelab.
 
 | Service | Host | Internal URL | Deployment | Status |
 |---|---|---|---|---|
-| [GitLab CE](gitlab.md) | `gondolin.shire` (10.136.20.102) | `http://10.136.20.102` | Proxmox VM (Debian 12) | ✅ Running |
+| [GitLab CE](gitlab.md) | `erebor.shire` (10.136.20.102) | `http://10.136.20.102` | Proxmox VM (Debian 12) | ✅ Running |
 | [Grafana](grafana.md) | `palantir.shire` (10.136.20.105) | `http://10.136.20.105:3000` | Proxmox VM (Debian 12) | ✅ Running |
 | [Prometheus](prometheus.md) | `palantir.shire` (10.136.20.105) | `http://10.136.20.105:9090` | Proxmox VM (Debian 12) | ✅ Running |
 | [Heimdall](heimdall.md) | `thal.shire` (10.136.20.104) | `http://10.136.20.104` | Proxmox VM (Debian 12) | ✅ Running |

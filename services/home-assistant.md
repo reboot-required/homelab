@@ -6,7 +6,7 @@
 
 ## Overview
 
-Home Assistant OS is the home automation hub for the homelab. It runs on `weathertop.shire` and manages all IoT devices — ESP8266 temperature/humidity sensors and smart plugs — via MQTT. It has two network interfaces: one on the homelab network for management, and one on IoT VLAN 30 for direct communication with IoT devices.
+Home Assistant OS is the home automation hub for the homelab. It runs on `weathertop.shire` and manages all IoT devices — ESP8266 temperature/humidity sensors and smart plugs — by subscribing to the MQTT broker on `gondolin.shire`. It has two network interfaces: one on the homelab network for management, and one on IoT VLAN 30 for communication with the MQTT gateway.
 
 ## Host
 
@@ -41,7 +41,7 @@ See [infrastructure/node-registry.md](../infrastructure/node-registry.md) for th
 ## Dependencies
 
 - `bill-the-pony.shire` — Proxmox hypervisor
-- MQTT broker (for sensor/plug communication)
+- MQTT broker: `gondolin.shire` (Raspberry Pi 2B MQTT IoT gateway)
 - `proudfoot-00..04.shire` — IoT sensors
 - `took-00..01.shire` — smart plugs
 

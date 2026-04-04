@@ -8,7 +8,7 @@
 
 ## Prerequisites
 
-- Access to Proxmox web UI at `http://10.136.20.10:8006`
+- Access to Proxmox web UI at `http://10.136.20.100:8006`
 - ISO image uploaded to Proxmox storage (or URL for download)
 - IP address reserved in [node-registry.md](../../../infrastructure/node-registry.md)
 

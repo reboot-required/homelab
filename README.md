@@ -40,8 +40,8 @@ For the full authoritative table, see [infrastructure/node-registry.md](infrastr
 | `the.shire` | N150 Mini-PC | OPNsense Router / Firewall / DNS / Ad-blocking | 10.136.20.1 |
 | `hobbiton.shire` | Netgear GS108E | Core Managed Switch (8-port) | 10.136.20.2 |
 | `greenway.shire` | Netgear GS308EP | PoE Managed Switch (8-port) | 10.136.20.3 |
-| `bree.shire` | Zyxel NWA50AX | Wi-Fi 6 Access Point (OpenWRT) | 10.136.20.4 |
-| `bill-the-pony.shire` | N150 Mini-PC | Proxmox VE Hypervisor | 10.136.20.10 |
+| `bree.shire` | Zyxel NWA50AX | Wi-Fi 6 Access Point (OpenWRT) | 10.136.20.151 |
+| `bill-the-pony.shire` | N150 Mini-PC | Proxmox VE Hypervisor | 10.136.20.100 |
 | `isengard.shire` | Cel3867U Mini-PC | K3s Master Node | 10.136.20.11 |
 | `rohan.shire` | N150 Mini-PC | K3s Worker Node 1 | 10.136.20.12 |
 | `gondor.shire` | N150 Mini-PC | K3s Worker Node 2 | 10.136.20.13 |
@@ -54,7 +54,8 @@ For the full authoritative table, see [infrastructure/node-registry.md](infrastr
 | `crickhollow.shire` | Orange Pi Zero 3 (1 GB) | Development | 10.136.20.26 |
 | `iron-hills.shire` | AMD X570 PC | Personal Workstation | 10.136.50.10 |
 | `radagast.shire` | Proxmox VM (Debian 12) | n8n Workflow Automation | 10.136.20.101 |
-| `gondolin.shire` | Proxmox VM (Debian 12) | GitLab CE | 10.136.20.102 |
+| `erebor.shire` | Proxmox VM (Debian 12) | GitLab CE | 10.136.20.102 |
+| `gondolin.shire` | Raspberry Pi 2B | MQTT IoT Gateway | 10.136.20.x |
 | `rivendell.shire` | Proxmox VM (TrueNAS Scale) | NAS / File Storage | 10.136.20.103 |
 | `thal.shire` | Proxmox VM (Debian 12) | Heimdall Dashboard | 10.136.20.104 |
 | `palantir.shire` | Proxmox VM (Debian 12) | Grafana + Prometheus Monitoring | 10.136.20.105 |

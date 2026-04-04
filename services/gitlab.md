@@ -12,7 +12,7 @@ GitLab Community Edition is the self-hosted Git repository manager and CI/CD pla
 
 | Property | Value |
 |---|---|
-| Hostname | `gondolin.shire` |
+| Hostname | `erebor.shire` |
 | IP | 10.136.20.102 |
 | VM ID | 101 |
 | Hypervisor | `bill-the-pony.shire` |

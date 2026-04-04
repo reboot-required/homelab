@@ -64,10 +64,10 @@ All network-attached devices use a **Tolkien / Middle-earth–inspired** hostnam
 | Access point (physical) | `bree.shire` |
 | Wireless SSIDs / virtual APs | `bag-end.shire` (home), `green-dragon-inn.shire` (IoT), `prancing-pony.shire` (guest) |
 | Proxmox hypervisor | `bill-the-pony.shire` |
-| VMs | `radagast.shire`, `gondolin.shire`, `rivendell.shire`, `thal.shire`, `palantir.shire`, `khazad-dum.shire`, `weathertop.shire` |
+| VMs | `radagast.shire`, `erebor.shire`, `rivendell.shire`, `thal.shire`, `palantir.shire`, `khazad-dum.shire`, `weathertop.shire` |
 | Kubernetes cluster nodes | `isengard.shire`, `rohan.shire`, `gondor.shire` |
 | LLM server | `valinor.shire` |
-| Raspberry Pi devices | `tuckborough.shire`, `overhill.shire`, `bywater.shire`, `stock.shire` |
+| Raspberry Pi devices | `tuckborough.shire`, `overhill.shire`, `bywater.shire`, `stock.shire`, `gondolin.shire` |
 | Orange Pi devices | `buckland.shire`, `crickhollow.shire` |
 | IoT sensors (ESP8266 ×5) — Proudfoot family | `proudfoot-00.shire` – `proudfoot-04.shire` |
 | IoT smart plugs ×2 — Took family | `took-00.shire`, `took-01.shire` |
@@ -118,7 +118,7 @@ See [vlans.md](vlans.md) for detailed VLAN configuration. A visual VLAN diagram 
 | `bree.shire` | Zyxel NWA50AX | Homelab (mgmt) + trunk to VLAN 30 & 100 |
 | `bill-the-pony.shire` | Proxmox Hypervisor | Homelab |
 | `radagast.shire` | VM — n8n | Homelab |
-| `gondolin.shire` | VM — GitLab | Homelab |
+| `erebor.shire` | VM — GitLab | Homelab |
 | `rivendell.shire` | VM — TrueNAS | Homelab |
 | `thal.shire` | VM — Heimdall Dashboard | Homelab |
 | `palantir.shire` | VM — Grafana | Homelab |
@@ -152,8 +152,8 @@ See [vlans.md](vlans.md) for detailed VLAN configuration. A visual VLAN diagram 
 | `the.shire` | OPNsense (homelab interface) | 10.136.20.1 | Static |
 | `hobbiton.shire` | Netgear GS108E | 10.136.20.2 | Static |
 | `greenway.shire` | Netgear GS308EP | 10.136.20.3 | Static |
-| `bree.shire` | Zyxel NWA50AX | 10.136.20.4 | Static |
-| `bill-the-pony.shire` | Proxmox Hypervisor | 10.136.20.10 | Static |
+| `bree.shire` | Zyxel NWA50AX | 10.136.20.151 | Static |
+| `bill-the-pony.shire` | Proxmox Hypervisor | 10.136.20.100 | Static |
 | `isengard.shire` | K3s Master (Cel3867U) | 10.136.20.11 | Static |
 | `rohan.shire` | K3s Worker 1 (N150) | 10.136.20.12 | Static |
 | `gondor.shire` | K3s Worker 2 (N150) | 10.136.20.13 | Static |
@@ -165,7 +165,7 @@ See [vlans.md](vlans.md) for detailed VLAN configuration. A visual VLAN diagram 
 | `buckland.shire` | Orange Pi Zero 3 (4 GB) | 10.136.20.25 | Static |
 | `crickhollow.shire` | Orange Pi Zero 3 (1 GB) | 10.136.20.26 | Static |
 | `radagast.shire` | VM — n8n | 10.136.20.101 | Static |
-| `gondolin.shire` | VM — GitLab | 10.136.20.102 | Static |
+| `erebor.shire` | VM — GitLab | 10.136.20.102 | Static |
 | `rivendell.shire` | VM — TrueNAS | 10.136.20.103 | Static |
 | `thal.shire` | VM — Heimdall Dashboard | 10.136.20.104 | Static |
 | `palantir.shire` | VM — Grafana | 10.136.20.105 | Static |
@@ -237,7 +237,7 @@ See [vlans.md](vlans.md) for detailed VLAN configuration. A visual VLAN diagram 
              │    │    │    │    │    └── gondor.shire  (K3s W2)  10.136.20.13
              │    │    │    │    └── rohan.shire     (K3s W1)  10.136.20.12
              │    │    │    └── isengard.shire    (K3s M1)  10.136.20.11
-             │    │    └── bill-the-pony.shire   (Proxmox)  10.136.20.10
+             │    │    └── bill-the-pony.shire   (Proxmox)  10.136.20.100
              │    └── tuckborough.shire          (RPi 5B)   10.136.20.21
              └── the.shire uplink (port 20)
                                                     │
@@ -254,7 +254,7 @@ See [vlans.md](vlans.md) for detailed VLAN configuration. A visual VLAN diagram 
              │              ┌────────┴────────────────────────┐
              │              │          bree.shire             │
              │              │  Zyxel NWA50AX Wi-Fi 6 OpenWRT  │
-             │              │  10.136.20.4                    │
+             │              │  10.136.20.151                  │
              │              └────┬──────────────┬──────────┬──┘
              │                   │              │          │
              │         bag-end.shire  green-dragon-   prancing-pony.shire
@@ -278,9 +278,9 @@ iron-hills.shire  (AMD X570 Workstation, 10.136.50.10)  ◄── direct, OPNsen
 ### Proxmox VM Group
 
 ```
-bill-the-pony.shire  (Proxmox VE, 10.136.20.10)
+bill-the-pony.shire  (Proxmox VE, 10.136.20.100)
 ├── radagast.shire      10.136.20.101   Workflow automation (n8n)
-├── gondolin.shire      10.136.20.102   Source control (GitLab CE)
+├── erebor.shire        10.136.20.102   Source control (GitLab CE)
 ├── rivendell.shire     10.136.20.103   NAS / file storage (TrueNAS Scale)
 ├── thal.shire          10.136.20.104   Service dashboard (Heimdall)
 ├── palantir.shire      10.136.20.105   Monitoring (Grafana + Prometheus)
@@ -323,7 +323,7 @@ bill-the-pony.shire  (Proxmox VE, 10.136.20.10)
 
 ## 8 · Wireless Networks
 
-**Hardware:** Zyxel NWA50AX — Wi-Fi 6 (802.11ax), OpenWRT — `bree.shire` (10.136.20.4)
+**Hardware:** Zyxel NWA50AX — Wi-Fi 6 (802.11ax), OpenWRT — `bree.shire` (10.136.20.151)
 
 Three virtual APs are configured on `bree.shire`, each mapped to a different VLAN:
 
@@ -344,14 +344,14 @@ See [wireless.md](wireless.md) for detailed wireless configuration.
 
 ## 9 · Virtual Machines — Proxmox (`bill-the-pony.shire`)
 
-**Hypervisor:** Proxmox VE | **Host:** `bill-the-pony.shire` | **Host IP:** 10.136.20.10
+**Hypervisor:** Proxmox VE | **Host:** `bill-the-pony.shire` | **Host IP:** 10.136.20.100
 
 > Resource allocations are estimates; verify against the actual Proxmox configuration.
 
 | VM ID | Hostname | OS | Role | vCPU | RAM | Storage | IP |
 |---|---|---|---|---|---|---|---|
 | 100 | `radagast.shire` | Debian 12 | Workflow automation — n8n | 2 | 4 GB | 20 GB | 10.136.20.101 |
-| 101 | `gondolin.shire` | Debian 12 | Source control — GitLab CE | 4 | 8 GB | 100 GB | 10.136.20.102 |
+| 101 | `erebor.shire` | Debian 12 | Source control — GitLab CE | 4 | 8 GB | 100 GB | 10.136.20.102 |
 | 102 | `rivendell.shire` | TrueNAS Scale | NAS / file storage | 2 | 8 GB | 500 GB+ | 10.136.20.103 |
 | 103 | `thal.shire` | Debian 12 | Service dashboard — Heimdall | 1 | 1 GB | 10 GB | 10.136.20.104 |
 | 104 | `palantir.shire` | Debian 12 | Monitoring — Grafana + Prometheus | 2 | 4 GB | 50 GB | 10.136.20.105 |
@@ -360,7 +360,7 @@ See [wireless.md](wireless.md) for detailed wireless configuration.
 
 ### VM Notes
 
-- **`weathertop.shire`** has two virtual NICs: one on the homelab network (admin UI, 10.136.20.107) and one on IoT VLAN 30 (10.136.30.5) for direct communication with sensors and smart plugs via MQTT.
+- **`weathertop.shire`** has two virtual NICs: one on the homelab network (admin UI, 10.136.20.107) and one on IoT VLAN 30 (10.136.30.5) for subscribing to the MQTT broker on `gondolin.shire` and managing IoT automations.
 - **`rivendell.shire`** (TrueNAS Scale) should use PCIe/USB disk pass-through configured in Proxmox for production use.
 - **`radagast.shire`** (*the wizard who tends to nature*) handles automated workflows connecting homelab services.
 - **`palantir.shire`** (*the far-seeing stone*) aggregates metrics and logs from all servers and the K3s cluster.
@@ -372,24 +372,24 @@ See [compute/proxmox/vm-overview.md](../compute/proxmox/vm-overview.md) for more
 
 ## 10 · IoT Devices — VLAN 30
 
-All IoT devices connect via the `green-dragon-inn.shire` SSID (2.4 GHz, VLAN 30, 10.136.30.0/24). Device names follow the **Hobbit family surname** convention. All sensors report via MQTT to `weathertop.shire` (Home Assistant OS).
+All IoT devices connect via the `green-dragon-inn.shire` SSID (2.4 GHz, VLAN 30, 10.136.30.0/24). Device names follow the **Hobbit family surname** convention. All sensors and smart plugs report via MQTT to `gondolin.shire` (MQTT IoT gateway, Raspberry Pi 2B). Home Assistant on `weathertop.shire` subscribes to the broker.
 
 ### Proudfoot Family — Temperature & Humidity Sensors (ESP8266)
 
 | Hostname | Location | Sensors | IP | Protocol |
 |---|---|---|---|---|
-| `proudfoot-00.shire` | Server rack | Temperature | 10.136.30.10 | MQTT → `weathertop.shire` |
-| `proudfoot-01.shire` | Living room | Temperature + Humidity | 10.136.30.11 | MQTT → `weathertop.shire` |
-| `proudfoot-02.shire` | Bedroom | Temperature + Humidity | 10.136.30.12 | MQTT → `weathertop.shire` |
-| `proudfoot-03.shire` | Bathroom | Temperature + Humidity | 10.136.30.13 | MQTT → `weathertop.shire` |
-| `proudfoot-04.shire` | Kitchen | Temperature + Humidity | 10.136.30.14 | MQTT → `weathertop.shire` |
+| `proudfoot-00.shire` | Server rack | Temperature | 10.136.30.10 | MQTT → `gondolin.shire` |
+| `proudfoot-01.shire` | Living room | Temperature + Humidity | 10.136.30.11 | MQTT → `gondolin.shire` |
+| `proudfoot-02.shire` | Bedroom | Temperature + Humidity | 10.136.30.12 | MQTT → `gondolin.shire` |
+| `proudfoot-03.shire` | Bathroom | Temperature + Humidity | 10.136.30.13 | MQTT → `gondolin.shire` |
+| `proudfoot-04.shire` | Kitchen | Temperature + Humidity | 10.136.30.14 | MQTT → `gondolin.shire` |
 
 ### Took Family — Smart Plugs
 
 | Hostname | Location | Function | IP | Protocol |
 |---|---|---|---|---|
-| `took-00.shire` | Server rack | Power monitoring & switching | 10.136.30.20 | MQTT → `weathertop.shire` |
-| `took-01.shire` | Living room | Power monitoring & switching | 10.136.30.21 | MQTT → `weathertop.shire` |
+| `took-00.shire` | Server rack | Power monitoring & switching | 10.136.30.20 | MQTT → `gondolin.shire` |
+| `took-01.shire` | Living room | Power monitoring & switching | 10.136.30.21 | MQTT → `gondolin.shire` |
 
 See [iot/sensors.md](../iot/sensors.md) and [iot/smart-plugs.md](../iot/smart-plugs.md) for full IoT device documentation.
 

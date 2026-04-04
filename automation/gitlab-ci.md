@@ -4,13 +4,13 @@
 
 > 🚧 This page is a stub. Content to be added.
 
-GitLab CI/CD pipelines are used to automate builds, tests, and deployments for projects hosted on `gondolin.shire` (GitLab CE).
+GitLab CI/CD pipelines are used to automate builds, tests, and deployments for projects hosted on `erebor.shire` (GitLab CE).
 
 ---
 
 ## Overview
 
-- GitLab instance: `gondolin.shire` (10.136.20.102)
+- GitLab instance: `erebor.shire` (10.136.20.102)
 - CI Runner: GitLab Runner deployed on the K3s cluster (`isengard.shire` / `rohan.shire` / `gondor.shire`)
 
 ---

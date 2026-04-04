@@ -5,7 +5,7 @@
 > 🚧 This page is a stub. Content to be added.
 
 **Hardware:** Zyxel NWA50AX — Wi-Fi 6 (802.11ax), running **OpenWRT**  
-**Host:** `bree.shire` | **IP:** 10.136.20.4  
+**Host:** `bree.shire` | **IP:** 10.136.20.151  
 **Connected via:** `greenway.shire` (PoE, port 7)
 
 ---

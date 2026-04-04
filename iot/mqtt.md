@@ -10,7 +10,7 @@ MQTT (Message Queuing Telemetry Transport) is the lightweight publish/subscribe 
 
 ## Architecture
 
-All IoT devices on VLAN 30 publish sensor data and receive commands via MQTT. The MQTT broker runs on or is integrated with `weathertop.shire` at **10.136.30.5** (IoT NIC).
+All IoT devices on VLAN 30 publish sensor data and receive commands via MQTT. The MQTT broker runs on **`gondolin.shire`** — a dedicated Raspberry Pi 2B MQTT IoT gateway on the homelab network. Home Assistant on `weathertop.shire` connects to `gondolin.shire` to consume sensor data and control actuators.
 
 ---
 

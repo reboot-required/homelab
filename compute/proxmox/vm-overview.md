@@ -4,7 +4,7 @@
 
 > 🚧 This page is a stub. Content to be added.
 
-All virtual machines hosted on `bill-the-pony.shire` (Proxmox VE, 10.136.20.10).
+All virtual machines hosted on `bill-the-pony.shire` (Proxmox VE, 10.136.20.100).
 
 > Resource allocations are estimates; verify against the actual Proxmox configuration.
 
@@ -15,7 +15,7 @@ All virtual machines hosted on `bill-the-pony.shire` (Proxmox VE, 10.136.20.10).
 | VM ID | Hostname | OS | Role | vCPU | RAM | Storage | IP |
 |---|---|---|---|---|---|---|---|
 | 100 | `radagast.shire` | Debian 12 | Workflow automation — n8n | 2 | 4 GB | 20 GB | 10.136.20.101 |
-| 101 | `gondolin.shire` | Debian 12 | Source control — GitLab CE | 4 | 8 GB | 100 GB | 10.136.20.102 |
+| 101 | `erebor.shire` | Debian 12 | Source control — GitLab CE | 4 | 8 GB | 100 GB | 10.136.20.102 |
 | 102 | `rivendell.shire` | TrueNAS Scale | NAS / file storage | 2 | 8 GB | 500 GB+ | 10.136.20.103 |
 | 103 | `thal.shire` | Debian 12 | Service dashboard — Heimdall | 1 | 1 GB | 10 GB | 10.136.20.104 |
 | 104 | `palantir.shire` | Debian 12 | Monitoring — Grafana + Prometheus | 2 | 4 GB | 50 GB | 10.136.20.105 |

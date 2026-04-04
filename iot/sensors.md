@@ -12,11 +12,11 @@ Five ESP8266-based temperature and humidity sensors are deployed around the home
 
 | Hostname | Location | Sensors | IP | Protocol |
 |---|---|---|---|---|
-| `proudfoot-00.shire` | Server rack | Temperature | 10.136.30.10 | MQTT → `weathertop.shire` |
-| `proudfoot-01.shire` | Living room | Temperature + Humidity | 10.136.30.11 | MQTT → `weathertop.shire` |
-| `proudfoot-02.shire` | Bedroom | Temperature + Humidity | 10.136.30.12 | MQTT → `weathertop.shire` |
-| `proudfoot-03.shire` | Bathroom | Temperature + Humidity | 10.136.30.13 | MQTT → `weathertop.shire` |
-| `proudfoot-04.shire` | Kitchen | Temperature + Humidity | 10.136.30.14 | MQTT → `weathertop.shire` |
+| `proudfoot-00.shire` | Server rack | Temperature | 10.136.30.10 | MQTT → `gondolin.shire` |
+| `proudfoot-01.shire` | Living room | Temperature + Humidity | 10.136.30.11 | MQTT → `gondolin.shire` |
+| `proudfoot-02.shire` | Bedroom | Temperature + Humidity | 10.136.30.12 | MQTT → `gondolin.shire` |
+| `proudfoot-03.shire` | Bathroom | Temperature + Humidity | 10.136.30.13 | MQTT → `gondolin.shire` |
+| `proudfoot-04.shire` | Kitchen | Temperature + Humidity | 10.136.30.14 | MQTT → `gondolin.shire` |
 
 ---
 

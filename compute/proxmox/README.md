@@ -4,10 +4,10 @@
 
 > 🚧 This page is a stub. Content to be added.
 
-**Host:** `bill-the-pony.shire` | **IP:** 10.136.20.10  
+**Host:** `bill-the-pony.shire` | **IP:** 10.136.20.100  
 **Hardware:** N150 Mini-PC  
 **Hypervisor:** Proxmox VE  
-**Management UI:** `http://10.136.20.10:8006`
+**Management UI:** `http://10.136.20.100:8006`
 
 ---
 
