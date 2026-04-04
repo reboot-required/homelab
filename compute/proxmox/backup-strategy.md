@@ -22,6 +22,17 @@ Proxmox VE provides native VM snapshot and backup capabilities. All VMs on `bill
 
 ---
 
+## Hardware Refresh Planning Notes
+
+Before the incoming **AMD Ryzen 5 5600X / A520 mini-ITX** host is cut over, treat backup validation as a release gate for the migration.
+
+- Snapshot every critical VM on `bill-the-pony.shire` immediately before shutdown.
+- Export or record bridge, storage, and passthrough configuration so the new Proxmox install can be verified quickly.
+- Validate that the kernel-build VM has enough backup retention to survive iterative tuning after migration.
+- Record any downtime window and recovery checkpoints in [runbooks/replace-proxmox-host.md](runbooks/replace-proxmox-host.md).
+
+---
+
 ## See Also
 
 - [storage/truenas.md](../../storage/truenas.md) — TrueNAS RAID1 storage

@@ -79,6 +79,29 @@ See [rack-layout.md](rack-layout.md) for a full ASCII diagram.
 ## Future & Extension Plans
 
 - **NAS expansion**: `rivendell.shire` (TrueNAS Scale) already runs as a Proxmox VM; long-term plan is a dedicated physical NAS device with direct disk pass-through for improved performance and redundancy.
-- **Proxmox upgrade**: Replace N150 Mini-PC with Ryzen 9 mini-PC for increased VM headroom.
+- **Proxmox upgrade**: Replace the current N150 Mini-PC with an AMD Ryzen 5 5600X / A520 mini-ITX platform for increased VM headroom.
 - **Rack expansion**: Additional U-space for extra patch panels and future devices.
 - **Additional access points**: Deploy `green-dragon-inn.shire` and `prancing-pony.shire` as physically separate APs for improved whole-home Wi-Fi coverage (currently provided by `bree.shire` as virtual APs).
+
+---
+
+## Incoming Hardware Upgrade Plan
+
+The next rack refresh will introduce a new **AMD Ryzen 5 5600X on an A520 mini-ITX mainboard** as a Proxmox host. Until the cutover is complete, the live inventory above remains authoritative for currently deployed hardware.
+
+### Planned Documentation Updates After Cutover
+
+- Replace the current Proxmox host hardware notes for `bill-the-pony.shire` if the new platform keeps the existing role and address.
+- If the incoming system receives a new hostname instead of reusing `bill-the-pony.shire`, update [node-registry.md](node-registry.md), [README.md](../README.md), and all Proxmox references in one pass.
+- Remove the **Raspberry Pi Panel** from the rack inventory and archive any rack-specific references to `overhill.shire`, `bywater.shire`, and `stock.shire`.
+- Confirm the final disposition of Raspberry Pi-based services, especially whether `gondolin.shire` remains in service outside the rack or is migrated to a VM.
+- Recalculate power and yearly energy estimates after the Ryzen platform is installed.
+
+### Integration Checklist
+
+- [ ] Record final CPU, RAM, storage, and enclosure details for the new Ryzen host.
+- [ ] Confirm whether `bill-the-pony.shire` is replaced in place or retired in favor of a new hostname.
+- [ ] Remove permanently de-racked Raspberry Pi devices from the rack diagram and rack-layout table.
+- [ ] Document any workloads moved off Raspberry Pi hardware and identify their new landing zone.
+- [ ] Revisit the Proxmox and storage backup sections after the kernel-build VM sizing is finalized.
+- [ ] Attach the migration checklist in [compute/proxmox/runbooks/replace-proxmox-host.md](../compute/proxmox/runbooks/replace-proxmox-host.md) to the integration pull request.

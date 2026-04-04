@@ -40,6 +40,20 @@ The homelab uses a **9U 10" rack**. The current device layout is shown below.
 
 ---
 
+## Planned Changes for the Next Hardware Refresh
+
+The current ASCII layout above reflects the live rack as documented today. When the incoming **AMD Ryzen 5 5600X / A520 mini-ITX** Proxmox system is installed, update this page with the final post-cutover layout.
+
+### Rack-Specific Checklist
+
+- [ ] Replace the generic **Proxmox Server** label with the final chassis and hardware notes for the incoming host.
+- [ ] Remove the **Raspberry Pi Panel** section once `overhill.shire`, `bywater.shire`, and `stock.shire` are no longer rack-mounted.
+- [ ] Confirm whether the freed rack space remains empty, is reused for the new host, or is reassigned to cable management.
+- [ ] Review whether any Raspberry Pi services continue off-rack and move those details out of the rack diagram.
+- [ ] Cross-check the final rack diagram against [hardware-summary.md](hardware-summary.md) and [compute/proxmox/runbooks/replace-proxmox-host.md](../compute/proxmox/runbooks/replace-proxmox-host.md).
+
+---
+
 ## Future Plans
 
 - Additional U-space is planned for extra patch panels and future devices.

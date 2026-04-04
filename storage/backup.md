@@ -27,6 +27,17 @@ The homelab uses a **layered backup strategy**:
 
 ---
 
+## Hardware Migration Considerations
+
+The planned Proxmox hardware refresh adds a new dependency to the backup strategy: enough validated recovery coverage to move workloads from the current host to the incoming **AMD Ryzen 5 5600X / A520 mini-ITX** platform.
+
+- Treat Proxmox snapshots as short-term migration checkpoints, not the only recovery copy.
+- Verify that critical service data on `erebor.shire`, `radagast.shire`, `palantir.shire`, `rivendell.shire`, and `weathertop.shire` is recoverable before the cutover.
+- If any Raspberry Pi-hosted workloads are retired or virtualized, update the critical data inventory to reflect their new storage location.
+- Mirror final migration notes in [compute/proxmox/backup-strategy.md](../compute/proxmox/backup-strategy.md) so Proxmox-specific and platform-wide backup guidance stay aligned.
+
+---
+
 ## See Also
 
 - [truenas.md](truenas.md) — TrueNAS storage configuration

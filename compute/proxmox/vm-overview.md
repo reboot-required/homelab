@@ -29,3 +29,9 @@ All virtual machines hosted on `bill-the-pony.shire` (Proxmox VE, 10.136.20.100)
 - **`weathertop.shire`** has two virtual NICs: homelab (10.136.20.107) and IoT VLAN 30 (10.136.30.5).
 - **`rivendell.shire`** should use PCIe/USB disk pass-through for production NAS performance.
 - See [backup-strategy.md](backup-strategy.md) for snapshot and retention policy.
+
+### Planned Resource Review for the Hardware Refresh
+
+- Revisit the CPU and RAM allocation for `khazad-dum.shire` once the Ryzen 5 5600X host is in production.
+- Confirm whether any Raspberry Pi-hosted workloads are consolidated into existing VMs or new VMs during the migration.
+- If the Proxmox host keeps the `bill-the-pony.shire` identity, update only the hardware notes; if it changes hostname, update this page after [node-registry.md](../../infrastructure/node-registry.md).
