@@ -24,12 +24,12 @@ Proxmox VE provides native VM snapshot and backup capabilities. All VMs on `bill
 
 ## Hardware Refresh Planning Notes
 
-Before the incoming **AMD Ryzen 5 5600X / A520 mini-ITX** host is cut over, treat backup validation as a release gate for the migration.
+Before the incoming **AMD Ryzen 5 5600X / A520 mini-ITX** host is cut over, treat backup validation as a release gate for the targeted migration of `khazad-dum.shire`.
 
-- Snapshot every critical VM on `bill-the-pony.shire` immediately before shutdown.
-- Export or record bridge, storage, and passthrough configuration so the new Proxmox install can be verified quickly.
+- Snapshot or back up `khazad-dum.shire` immediately before it is moved to the new host.
+- Export or record the current configuration for both `bill-the-pony.shire` and the new Proxmox node so the split-host layout can be verified quickly.
 - Validate that the kernel-build VM has enough backup retention to survive iterative tuning after migration.
-- Record any downtime window and recovery checkpoints in [runbooks/replace-proxmox-host.md](runbooks/replace-proxmox-host.md).
+- Record the hostname assignment, downtime window, and recovery checkpoints in [runbooks/add-proxmox-host.md](runbooks/add-proxmox-host.md).
 
 ---
 
