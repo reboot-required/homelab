@@ -22,7 +22,7 @@ flowchart TD
     U2["U2 · K3s shelf — gondor.shire"]
     U1["U1 · K3s shelf — reserved"]
 
-    U9 ~~~ U8 ~~~ U7 ~~~ U6 ~~~ U5 ~~~ U4 ~~~ U3 ~~~ U2 ~~~ U1
+    U9 --- U8 --- U7 --- U6 --- U5 --- U4 --- U3 --- U2 --- U1
 
     classDef net fill:#1f6f8b,stroke:#134b5f,color:#fff
     classDef srv fill:#3d6b35,stroke:#294a24,color:#fff
