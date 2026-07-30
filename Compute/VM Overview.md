@@ -18,7 +18,7 @@ All seven guests of [[bill-the-pony.shire]].
 |---:|---|---|---|---:|---:|---:|
 | 100 | [[radagast.shire]] | Debian 12 | [[n8n]] | 1 | 2 GB | 20 GB |
 | 101 | [[erebor.shire]] | Debian 12 | [[GitLab CE]] | 2 | 4 GB | 100 GB |
-| 102 | [[rivendell.shire]] | TrueNAS Scale | [[TrueNAS Scale\|NAS]] | 2 | 4 GB | 500 GB+ |
+| 102 | [[rivendell.shire]] | TrueNAS Scale | [[TrueNAS Scale]] | 2 | 4 GB | 500 GB+ |
 | 103 | [[thal.shire]] | Debian 12 | [[Heimdall]] | 1 | 1 GB | 10 GB |
 | 104 | [[palantir.shire]] | Debian 12 | [[Prometheus]] + [[Grafana]] | 1 | 2 GB | 50 GB |
 | 105 | [[khazad-dum.shire]] | Ubuntu 24.04 LTS | Kernel development | 4 | 8 GB | 100 GB |

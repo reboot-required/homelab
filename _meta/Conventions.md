@@ -88,6 +88,18 @@ tags: [service, automation]
 Wikilinks in frontmatter must be quoted — Obsidian then renders them as real
 links in the properties panel.
 
+## Templates
+
+The core Templates plugin is pointed at `_meta/Templates/`:
+
+- [[Node]] — a machine
+- [[Service]] — a self-hosted service
+- [[Runbook]] — a procedure
+- [[Journal Entry]] — a diary entry
+
+Use them. The frontmatter above is tedious to retype and easy to get subtly
+wrong by hand.
+
 ## Diagrams
 
 **Mermaid, in the note itself.** Obsidian renders it natively, GitHub renders it
