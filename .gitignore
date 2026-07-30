@@ -205,3 +205,18 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ---------------------------------------------------------------------------
+# Obsidian vault
+# ---------------------------------------------------------------------------
+# Vault config (.obsidian/) is tracked so the vault is reproducible, but
+# machine-local and volatile state is not.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/graph-local.json
+.obsidian/plugins/*/data.json
+.trash/
+
+# macOS / editor noise
+.DS_Store

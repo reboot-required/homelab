@@ -1,0 +1,27 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    { "query": "path:Nodes/", "color": { "a": 1, "rgb": 5431378 } },
+    { "query": "path:Services/", "color": { "a": 1, "rgb": 14701138 } },
+    { "query": "path:Networking/", "color": { "a": 1, "rgb": 11621088 } },
+    { "query": "path:Runbooks/", "color": { "a": 1, "rgb": 5419488 } },
+    { "query": "path:Journal/", "color": { "a": 1, "rgb": 8945322 } }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.2,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.5,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 1
+}
