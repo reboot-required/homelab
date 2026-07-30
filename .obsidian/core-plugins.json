@@ -27,5 +27,8 @@
   "slash-command": false,
   "starred": false,
   "publish": false,
-  "sync": false
+  "sync": false,
+  "footnotes": false,
+  "bases": true,
+  "webviewer": false
 }
